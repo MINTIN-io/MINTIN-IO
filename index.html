@@ -1,0 +1,1178 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<link rel="apple-touch-icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_biglines.png?v=1622062583">
+	<meta name="apple-mobile-web-app-title" content="CodePen">
+	<link rel="shortcut icon" type="image/x-icon" href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_biglines.png?v=1622062583">
+	<link rel="mask-icon" type="" href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_biglines.png?v=1622062583" color="#111">
+	<title>Mintin Nft Solutions </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- logo link -->
+	<link rel="icon" type="image/png" href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/MintinLogo_7a3aab84-55f8-4ede-9292-5e89e3647f25.png?v=1627454959">
+	<script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<title>Mintin - Create, buy, and sell digital artwork backed by blockchain technology</title>
+  <style>
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+.img-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.02);
+  display: block;
+  transform: scale(1.03);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+}
+.hero-center-section.show .img-wrap {
+  transform: scale(1);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+a:hover {
+  text-decoration: none;
+}
+::selection {
+  color: #c4c3ca;
+  background-color: #000;
+}
+::-moz-selection {
+  color: #c4c3ca;
+  background-color: #000;
+}
+
+/* #Primary style
+================================================== */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #1f2029;
+  overflow: hidden;
+  height: 100vh;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  perspective: 800px;
+}
+a {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+::selection {
+  color: #c4c3ca;
+  background-color: #000;
+}
+::-moz-selection {
+  color: #c4c3ca;
+  background-color: #000;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+  background-color: white;
+  background-image: url("https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_iconwaves.svg?v=1627454971");
+  background-size: 100%;
+  background-position: center;
+  transform: scale(1) rotateX(0);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+  transform-origin: center top;
+}
+.hero-section h1 {
+  color: #fff;
+  font-size: 8vw;
+  line-height: 1;
+  font-weight: 900;
+}
+.hero-section .dancing {
+  letter-spacing: 1px;
+  color: #10db2b;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transform: translateY(-175px) rotate(-45deg);
+  z-index: 2;
+}
+.hero-section .dancing span {
+  padding: 8px 15px;
+  padding-right: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+}
+@media screen and (max-width: 580px) {
+  .hero-section .dancing {
+    font-size: 18px;
+  }
+}
+.hero-section p {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #10db2b;
+}
+.hero-section p span {
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+body.about-on .hero-section {
+  transform: scale(0.75);
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+body.contact-on .hero-section {
+  transform: scale(0.75);
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+body.travel-on .hero-section {
+  transform: rotateX(-10deg);
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+body.wildlife-on .hero-section {
+  transform: rotateX(-10deg);
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+body.nature-on .hero-section {
+  transform: rotateX(-10deg);
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+}
+.about-text {
+  position: absolute;
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.5;
+  font-weight: 700;
+  color: #10db2b;
+  letter-spacing: 2px;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  transform: translateY(-50%);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.about-text:hover {
+  opacity: 1;
+}
+.about-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+  transform: translateX(-100%);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  z-index: 10;
+}
+body.about-on .about-section {
+  transform: translateX(0);
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+.about-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0562/0770/4226/files/MintinLogo_7a3aab84-55f8-4ede-9292-5e89e3647f25.png?v=1627454959");
+  cursor: pointer;
+  z-index: 11;
+}
+.about-close:hover {
+  transform: rotate(90deg);
+}
+.section-center {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-30%);
+  z-index: 1;
+}
+.about-section img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 25px rgba(255, 235, 167, 0.35);
+}
+.about-section p {
+  letter-spacing: 1px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.about-section p span {
+  letter-spacing: 1px;
+  color: #10db2b;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact-text.hover-target {
+  color: #10db2b;
+}
+.contact-text {
+  position: absolute;
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.5;
+  font-weight: 700;
+  color: #10db2b;
+  letter-spacing: 2px;
+  top: 50%;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  transform: translateY(-50%) rotate(180deg);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.contact-text:hover {
+  opacity: 1;
+}
+.contact-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100vh;
+  background-color: white;
+  transform: translateX(100%);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  z-index: 10;
+}
+body.contact-on .contact-section {
+  transform: translateX(0);
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+
+.contact-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0562/0770/4226/files/MintinLogo_7a3aab84-55f8-4ede-9292-5e89e3647f25.png?v=1627454959");
+  cursor: pointer;
+  z-index: 11;
+}
+.contact-close:hover {
+  transform: rotate(90deg);
+}
+.contact-section a {
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: black;
+  display: inline-block;
+}
+.contact-section .social a {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #10db2b;
+}
+@media screen and (max-width: 580px) {
+  .contact-section a {
+    font-size: 17px;
+  }
+  .contact-section .social a {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+}
+
+.travel-section p,
+.wildlife-section p,
+.nature-section p {
+  font-style: normal;
+  color: #000;
+}
+
+.travel-section,
+.wildlife-section,
+.nature-section {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  padding: 100px 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  z-index: 10;
+}
+.travel-close,
+.wildlife-close,
+.nature-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  display: block;
+  overflow: hidden;
+  height: 30px;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0562/0770/4226/files/MintinLogo_7a3aab84-55f8-4ede-9292-5e89e3647f25.png?v=1627454959");
+  cursor: pointer;
+  z-index: 11;
+}
+.travel-close:hover,
+.wildlife-close:hover,
+.nature-close:hover {
+  transform: rotate(90deg);
+}
+body.travel-on .travel-section {
+  top: 0;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+body.wildlife-on .wildlife-section {
+  top: 0;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+body.nature-on .nature-section {
+  top: 0;
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+.travel-section img,
+.wildlife-section img,
+.nature-section img {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.travel-section h3,
+.wildlife-section h3,
+.nature-section h3 {
+  font-size: 7vw;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.travel-section p,
+.wildlife-section p,
+.nature-section p {
+  font-size: 30px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.travel-section p span,
+.wildlife-section p span,
+.nature-section p span {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #10db2b;
+}
+
+.logo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: block;
+  z-index: 200000;
+  transition: all 250ms linear;
+}
+.logo img {
+  height: 26px;
+  width: auto;
+  display: block;
+  mix-blend-mode: difference;
+}
+
+@media (max-width: 1200px) {
+  .hero-section .dancing {
+    font-size: 15px;
+    transform: translateY(-80px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 967px) {
+  .hero-section h1 {
+    font-size: 11vw;
+  }
+  .hero-section p {
+    font-size: 18px;
+  }
+  .hero-section p span {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .travel-section h3,
+  .wildlife-section h3,
+  .nature-section h3 {
+    font-size: 13vw;
+  }
+}
+
+.cursor,
+.cursor2,
+.cursor3 {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  z-index: 4;
+}
+.cursor {
+  background-color: var(--blue);
+  height: 0;
+  width: 0;
+}
+.cursor2,
+.cursor3 {
+  height: 50px;
+  width: 50px;
+  transition: all 200ms ease-out;
+  background-position: center;
+  background-size: 0 0;
+}
+.cursor2.hover,
+.cursor3.hover {
+  height: 220px;
+  width: 320px;
+  border: none;
+  border-radius: 8px;
+}
+.cursor2 {
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 12px rgba(16, 39, 112, 0.2);
+}
+.cursor2.hover {
+  background-size: cover;
+  box-shadow: 0 0 0 rgba(16, 39, 112, 0.2);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+.section {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding: 60px 0;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  line-height: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:checked:hover + label:before,
+[type="radio"]:not(:checked):hover + label:before,
+[type="radio"]:checked:hover + label:after,
+[type="radio"]:not(:checked):hover + label:after {
+  opacity: 0.7;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  background-color: transparent;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  border-radius: 2px;
+  height: 3px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  width: 0;
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  width: calc(100% - 24px);
+}
+
+.checkbox-all:checked + label:after,
+.checkbox-all:not(:checked) + label:after {
+  background-color: #000;
+}
+
+.checkbox-alizarin:checked + label:after,
+.checkbox-alizarin:not(:checked) + label:after {
+  background-color: #e74c3c;
+}
+
+.checkbox-wisteria:checked + label:after,
+.checkbox-wisteria:not(:checked) + label:after {
+  background-color: #8e44ad;
+}
+
+.checkbox-emerland:checked + label:after,
+.checkbox-emerland:not(:checked) + label:after {
+  background-color: #2ecc71;
+}
+
+.checkbox-belizehole:checked + label:after,
+.checkbox-belizehole:not(:checked) + label:after {
+  background-color: #2980b9;
+}
+
+.checkbox-sunflower:checked + label:after,
+.checkbox-sunflower:not(:checked) + label:after {
+  background-color: #f1c40f;
+}
+.checkbox-mintin:checked + label:after,
+.checkbox-mintin:not(:checked) + label:after {
+  background-color: #dd0a0a;
+}
+
+.img {
+  border-radius: 4px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.3s linear;
+}
+.img.alizarin {
+  border: 3px solid #e74c3c;
+}
+.img.wisteria {
+  border: 3px solid #8e44ad;
+}
+.img.emerland {
+  border: 3px solid #2ecc71;
+}
+.img.belizehole {
+  border: 3px solid #2980b9;
+}
+.img.sunflower {
+  border: 3px solid #f1c40f;
+}
+.img.mintin {
+  border: 3px solid #dd0a0a;
+}
+.img.alizarin,
+.img.wisteria,
+.img.emerland,
+.img.belizehole,
+.img.mintin,
+.img.sunflower {
+  opacity: 0;
+  transform: scale(0);
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  border-width: 0;
+}
+.checkbox-all:checked ~ .img.alizarin,
+.checkbox-all:checked ~ .img.wisteria,
+.checkbox-all:checked ~ .img.emerland,
+.checkbox-all:checked ~ .img.belizehole,
+.checkbox-all:checked ~ .img.sunflower,
+.checkbox-all:checked ~ .img.img.mintin,
+.checkbox-alizarin:checked ~ .img.alizarin,
+.checkbox-wisteria:checked ~ .img.wisteria,
+.checkbox-emerland:checked ~ .img.emerland,
+.checkbox-belizehole:checked ~ .img.belizehole,
+.checkbox-mintin:checked ~ .img.img.mintin,
+.checkbox-sunflower:checked ~ .img.sunflower {
+  opacity: 1;
+  min-height: 140px;
+  min-width: calc(22% - 28px);
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  visibility: visible;
+  transform: scale(1);
+  border-width: 3px;
+}
+@media (max-width: 1199px) {
+  .checkbox-all:checked ~ .img.alizarin,
+  .checkbox-all:checked ~ .img.wisteria,
+  .checkbox-all:checked ~ .img.emerland,
+  .checkbox-all:checked ~ .img.belizehole,
+  .checkbox-all:checked ~ .img.sunflower,
+  .checkbox-all:checked ~ .img.img.mintin,
+  .checkbox-alizarin:checked ~ .img.alizarin,
+  .checkbox-wisteria:checked ~ .img.wisteria,
+  .checkbox-emerland:checked ~ .img.emerland,
+  .checkbox-belizehole:checked ~ .img.belizehole,
+  .checkbox-mintin:checked ~ .img.img.mintin,
+  .checkbox-sunflower:checked ~ .img.sunflower {
+    min-width: calc(32% - 28px);
+  }
+}
+@media (max-width: 991px) {
+  .checkbox-all:checked ~ .img.alizarin,
+  .checkbox-all:checked ~ .img.wisteria,
+  .checkbox-all:checked ~ .img.emerland,
+  .checkbox-all:checked ~ .img.belizehole,
+  .checkbox-all:checked ~ .img.sunflower,
+  .checkbox-all:checked ~ .img.img.mintin,
+  .checkbox-alizarin:checked ~ .img.alizarin,
+  .checkbox-wisteria:checked ~ .img.wisteria,
+  .checkbox-emerland:checked ~ .img.emerland,
+  .checkbox-belizehole:checked ~ .img.belizehole,
+  .checkbox-mintin:checked ~ .img.img.mintin,
+  .checkbox-sunflower:checked ~ .img.sunflower {
+    min-width: calc(50% - 28px);
+  }
+}
+@media (max-width: 575px) {
+  .checkbox-all:checked ~ .img.alizarin,
+  .checkbox-all:checked ~ .img.wisteria,
+  .checkbox-all:checked ~ .img.emerland,
+  .checkbox-all:checked ~ .img.belizehole,
+  .checkbox-all:checked ~ .img.sunflower,
+  .checkbox-all:checked ~ .img.img.mintin,
+  .checkbox-alizarin:checked ~ .img.alizarin,
+  .checkbox-wisteria:checked ~ .img.wisteria,
+  .checkbox-emerland:checked ~ .img.emerland,
+  .checkbox-belizehole:checked ~ .img.belizehole,
+  .checkbox-mintin:checked ~ .img.img.mintin,
+  .checkbox-sunflower:checked ~ .img.sunflower {
+    min-width: calc(100% - 28px);
+  }
+}
+ </style>
+  </head>
+
+  <body translate="no" data-new-gr-c-s-check-loaded="14.1023.0" data-gr-ext-installed="">
+    <div class="hero-section">
+      <div class="about-text hover-target">about</div>
+      <div class="contact-text hover-target">contact</div>
+      <div class="section-center">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center">
+              <h1>MINTIN<br>.</h1> </div>
+            <div class="col-12 text-center" style="bottom: -40px;">
+              <p> <span class="wildlife hover-target">COLABORATION</span> <span class="nature hover-target">DYNAMICS</span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="about-close hover-target"></div>
+      <div class="section-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xs-12 col-md-8 text-center">
+              <div class="row">
+                <div class="col-xs-6 col-md-6"> <img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/Screen_Shot_2021-07-28_at_2.03.27_AM.png?v=1627463026" alt="">
+                  <p class="mb-0"><span>Rami Debbas</span></p>
+                </div>
+                <div class="col-xs-6 col-md-6"> <img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/Screen_Shot_2021-07-28_at_2.03.23_AM.png?v=1627463026" alt="">
+                  <p><span>Khaled Almehry</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 text-center mt-3">
+              <p class="mb-1">Empowering artists with a platform to show-case,ccollaorate and sell thier work securely supported with blockchain solutions</p>
+            </div>
+            <div class="col-12 text-center">
+              <p class="mb-0"><span>MINTIN NFT Creative Solutions</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-section">
+      <div class="contact-close hover-target"></div>
+      <div class="section-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 text-center"> <a href="{formbuilder:52803}" class="hover-target">info@mintin.io</a> </div>
+            <div class="col-12 text-center social mt-4"> <a href="#" class="hover-target">instagram</a> <a href="#" class="hover-target">discord</a> <a href="#" class="hover-target">facebook</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wildlife-section">
+      <div class="wildlife-close hover-target"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="section-fluid-main">
+            <div class="section-row">
+              <div class="section-col">
+                <p>Empowering Creatives With a <a href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_token_green.png?v=1627455018" class="hover-target img-1">Collaborative Platform</a>. You want to show and receive recognition for your physical media or digital creations. <a href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_token.png?v=1627455001" class="hover-target img-2">We are here to help.</a> When you join Mintin, you gain access to exclusive services and advice from professionals. <a href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/mintin_inter_tokken.png?v=1627454985" class="hover-target img-3">With blockchain technologies</a>, the sky's the limit! Let Mintin support you while you earn your wings and soar.Find your next NFT treasure in our hand curated marketplace. Feel the exhilaration as you score a digital token that could be from the next modern day art legend <a href="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_5.png?v=1627462198" class="hover-target img-4">A Masterpiece</a> is in your future and the glory is all yours.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nature-section">
+      <div class="nature-close hover-target"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h3>ALL</h3> </div>
+          <div class="col-md-6 col-lg-4 alizarin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_1.png?v=1627462170" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 wisteria"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_2.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 emerland"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_3.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 belizehole"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_4.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 sunflower"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_5.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 mintin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_6.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 alizarin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_1.png?v=1627462170" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 wisteria"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_2.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 emerland"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_3.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 belizehole"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_4.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 sunflower"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_5.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 mintin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_6.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 alizarin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_1.png?v=1627462170" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 wisteria"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_2.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 emerland"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_3.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 belizehole"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_4.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 sunflower"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_5.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 mintin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_6.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 alizarin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_1.png?v=1627462170" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 wisteria"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_2.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 emerland"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_3.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 belizehole"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_4.png?v=1627462183" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 sunflower"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_5.png?v=1627462198" alt="" class="center"></div>
+          <div class="col-md-6 col-lg-4 mintin"><img src="https://cdn.shopify.com/s/files/1/0562/0770/4226/files/icon_6.png?v=1627462198" alt="" class="center"></div>
+        </div>
+      </div>
+    </div>
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+<script id="rendered-js">
+
+
+(function($) { "use strict";
+	//Page cursors
+
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+
+	
+	//About page
+	
+	$(".about-text").on('click', function () {
+		$("body").addClass("about-on");
+	});
+	$(".about-close").on('click', function () {
+		$("body").removeClass("about-on");
+	});
+
+	
+	//Contact page
+	
+	$(".contact-text").on('click', function () {
+		$("body").addClass("contact-on");
+	});
+	$(".contact-close").on('click', function () {
+		$("body").removeClass("contact-on");
+	});
+
+	
+	//Travel portfolio page
+	
+	$(".travel").on('click', function () {
+		$("body").addClass("travel-on");
+	});
+	$(".travel-close").on('click', function () {
+		$("body").removeClass("travel-on");
+	});
+
+	
+	//Wildlife portfolio page
+	
+	$(".wildlife").on('click', function () {
+		$("body").addClass("wildlife-on");
+	});
+	$(".wildlife-close").on('click', function () {
+		$("body").removeClass("wildlife-on");
+	});
+
+	
+	//Nature portfolio page
+	
+	$(".nature").on('click', function () {
+		$("body").addClass("nature-on");
+	});
+	$(".nature-close").on('click', function () {
+		$("body").removeClass("nature-on");
+	});
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+  t.style.left = n.clientX + "px", 
+t.style.top = n.clientY + "px", 
+e.style.left = n.clientX + "px", 
+e.style.top = n.clientY + "px", 
+i.style.left = n.clientX + "px", 
+i.style.top = n.clientY + "px"
+});
+var t = document.getElementById("cursor"),
+    e = document.getElementById("cursor2"),
+    i = document.getElementById("cursor3");
+function n(t) {
+    e.classList.add("hover", "hover-2"), i.classList.add("hover", "hover-2")
+}
+function s(t) {
+    e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
+}
+s();
+for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+    o(r[a])
+}
+function o(t) {
+    t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+}
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.logo');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('logo-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('logo-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-1');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-1-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-1-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-2');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-2-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-2-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-3');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-3-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-3-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-4');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-4-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-4-wrap');
+  })
+})
+//Page cursors
+
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+  t.style.left = n.clientX + "px", 
+t.style.top = n.clientY + "px", 
+e.style.left = n.clientX + "px", 
+e.style.top = n.clientY + "px", 
+i.style.left = n.clientX + "px", 
+i.style.top = n.clientY + "px"
+});
+var t = document.getElementById("cursor"),
+  e = document.getElementById("cursor2"),
+  i = document.getElementById("cursor3");
+function n(t) {
+  e.classList.add("hover"), i.classList.add("hover")
+}
+function s(t) {
+  e.classList.remove("hover"), i.classList.remove("hover")
+}
+s();
+for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+  o(r[a])
+}
+function o(t) {
+  t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+}
+
+
+
+$(document).ready(function() {	
+  
+  /* Hero Case study images */			
+  
+  $('.slide-buttons li:nth-child(1)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(1)').addClass("show");
+    $('.slide-buttons li:nth-child(1)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(2)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(2)').addClass("show");
+    $('.slide-buttons li:nth-child(2)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(3)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(3)').addClass("show");
+    $('.slide-buttons li:nth-child(3)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(4)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(4)').addClass("show");
+    $('.slide-buttons li:nth-child(4)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(5)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(5)').addClass("show");
+    $('.slide-buttons li:nth-child(5)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(6)').on('mouseenter', function() {
+    $('.slide-buttons li.active').removeClass('active');
+    $('.hero-center-section.show').removeClass("show");
+    $('.hero-center-section:nth-child(6)').addClass("show");
+    $('.slide-buttons li:nth-child(6)').addClass('active');
+  })
+  $('.slide-buttons li:nth-child(1)').trigger('mouseenter')   
+  
+});
+ 
+
+// about page
+   
+document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+  t.style.left = n.clientX + "px", 
+t.style.top = n.clientY + "px", 
+e.style.left = n.clientX + "px", 
+e.style.top = n.clientY + "px", 
+i.style.left = n.clientX + "px", 
+i.style.top = n.clientY + "px"
+});
+var t = document.getElementById("cursor"),
+    e = document.getElementById("cursor2"),
+    i = document.getElementById("cursor3");
+function n(t) {
+    e.classList.add("hover", "hover-2"), i.classList.add("hover", "hover-2")
+}
+function s(t) {
+    e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
+}
+s();
+for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+    o(r[a])
+}
+function o(t) {
+    t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+}
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.logo');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('logo-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('logo-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-1');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-1-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-1-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-2');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-2-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-2-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-3');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-3-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-3-wrap');
+  })
+})
+document.addEventListener('DOMContentLoaded', function () {
+  var hoverLink = document.querySelector('.img-4');
+  var bodychange = document.querySelector('body');
+
+  hoverLink.addEventListener('mouseenter', function (e) {
+      bodychange.classList.add('img-4-wrap');
+  });
+  hoverLink.addEventListener('mouseleave', function () {
+      bodychange.classList.remove('img-4-wrap');
+  })
+})
+
+})(jQuery); 
+
+
+</script>
+</body>
+</html>
